@@ -5,8 +5,8 @@ import { useSelector } from 'react-redux';
 import { getToken } from 'redux/selectors';
 import AppBar from 'components/AppBar';
 import Container from 'components/Container';
-import { RestrictedRoute } from 'components/RestrictedRoute';
-import { PrivatRoute } from 'components/PrivatRoute';
+import { RestrictedRoute } from 'components/Route/RestrictedRoute';
+import { PrivatRoute } from 'components/Route/PrivatRoute';
 import { useGetCurrentQuery } from 'redux/userApi';
 
 import css from './App.module.css';

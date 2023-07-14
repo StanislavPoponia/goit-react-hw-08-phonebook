@@ -77,7 +77,7 @@ const ContactItem = ({ id, name, number }) => {
           />
           <div>
             <ButtonStyled onClick={handleSaveClick} disabled={isUpdating}>
-              {isUpdating && <RotatingLines height="20" width="20" />}
+              {isUpdating && <RotatingLines height="18" width="18" />}
               Save
             </ButtonStyled>
             <ButtonStyled onClick={handleCancelClick}>Cancel</ButtonStyled>
@@ -89,7 +89,7 @@ const ContactItem = ({ id, name, number }) => {
           <div>
             <ButtonStyled onClick={handleEditClick}>Edit</ButtonStyled>
             <ButtonStyled onClick={handleDeleteClick} disabled={isDeleting}>
-              {isDeleting && <RotatingLines height="20" width="20" />}
+              {isDeleting && <RotatingLines height="18" width="18" />}
               Delete
             </ButtonStyled>
           </div>
