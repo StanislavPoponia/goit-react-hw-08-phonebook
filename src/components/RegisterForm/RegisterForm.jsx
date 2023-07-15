@@ -1,11 +1,10 @@
 import { RotatingLines } from 'react-loader-spinner';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { useEffect } from 'react';
-
 import { serverError, registerError } from 'utils/notification';
 import { useRegisterMutation } from 'redux/userApi';
 import css from './RegisterForm.module.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 const RegisterForm = () => {
   const [register, { isLoading, error }] = useRegisterMutation();
@@ -30,7 +29,7 @@ const RegisterForm = () => {
     const confirmPassword = form.elements.confirmPassword.value;
 
     if (password !== confirmPassword) {
-      toast.error('Passwords do not match. Please try again.');
+      toast.error('Bad Passwords. Please try again.');
       return;
     }
 

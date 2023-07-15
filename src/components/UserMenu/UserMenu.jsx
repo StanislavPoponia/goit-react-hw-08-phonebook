@@ -11,12 +11,12 @@ const UserMenu = () => {
   const [logOut] = useLogOutMutation();
 
   return (
-    <div className={css.userMenu__wrapper}>
-      <p className={css.userMenu__text}>
+    <div className={css.wrapper}>
+      <p className={css.text}>
         Welcome, <span>{name}</span>!
       </p>
       <button
-        className={css.userMenu__btn}
+        className={css.btn}
         type="button"
         onClick={() => logOut()}
       >

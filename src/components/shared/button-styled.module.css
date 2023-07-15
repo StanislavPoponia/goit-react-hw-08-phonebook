@@ -1,7 +1,7 @@
 .btn {
     display: inline-block;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     font-size: 22px;
     font-weight: 500;
     border-radius: 5px;
@@ -10,7 +10,7 @@
     cursor: pointer;
     transition: all 0.3s ease 0s;
     color: rgb(255, 255, 255);
-    background-color: rgb(69 189 69);
+    background-color: rgb(252, 48, 201);
     margin-left: 20px;
   }
   
@@ -20,6 +20,6 @@
   
   .btn:hover,
   .btn:focus {
-    background-color: #28ab28;
-    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    background-color: #000000;
+    box-shadow: 0px 0px 8px 0px rgba(252, 53, 219, 0.2);
   }

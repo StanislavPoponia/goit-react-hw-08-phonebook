@@ -9,24 +9,20 @@ const HomePage = () => {
   return (
     <div className={css.wrapper}>
       <h1>PhoneBook!</h1>
-      <h3>
-        Create a new user account
-        
-      </h3>
       {!isLoggedIn && (
         <>
           <p className={css.text}>
            Account
-            <span className={css.pre_text}>
-              <Link to="/login" className={css.link}>
+            <span className={css.text_span}>
+              <Link to="/login" className={css.btn}>
                 Log In
               </Link>
             </span>
           </p>
           <p className={css.text}>
             New account
-            <span className={css.pre_text}>
-              <Link to="/register" className={css.link}>
+            <span className={css.text_span}>
+              <Link to="/register" className={css.btn}>
                 Sign In
               </Link>
             </span>

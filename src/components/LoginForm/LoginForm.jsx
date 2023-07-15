@@ -1,11 +1,10 @@
 import { RotatingLines } from 'react-loader-spinner';
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { useEffect } from 'react';
-
 import { loginError } from 'utils/notification';
 import { useLoginMutation } from 'redux/userApi';
 import css from './LoginForm.module.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 const LoginForm = () => {
   const [login, { isLoading, error }] = useLoginMutation();
