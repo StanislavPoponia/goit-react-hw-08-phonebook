@@ -1,6 +1,4 @@
 import { useSelector } from 'react-redux';
-
-import css from './ContactList.module.css';
 import ContactItem from '../ContactItem';
 import { getFilteredContacts } from 'redux/selectors';
 
@@ -13,14 +11,14 @@ const ContactList = () => {
   const { data: contacts, isLoading, error } = useFetchContactsQuery();
   return (
     <>
-      {isLoading && <p className={css.default}>...loading</p>}
+      {isLoading && <p>loading</p>}
       {error && (
-        <p className={css.default}>
+        <p>
           Sorry, something wrong, please try again
         </p>
       )}
-      {contacts && contacts.length === 0 && <p>There is no contact</p>}
-      <ul className={css.contactList}>
+      {contacts && contacts.length === 0 && <p>There is no any contact</p>}
+      <ul>
         {contacts &&
           getFilteredContacts(contacts, filter).map(({ id, name, number }) => (
             <ContactItem key={id} name={name} number={number} id={id} />

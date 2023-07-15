@@ -45,10 +45,8 @@ const ContactItem = ({ id, name, number }) => {
     updateContact({ id, name: editedName, number: editedNumber });
   };
 
-  const handleDeleteClick = () => {
-    if (window.confirm('Are you sure you want to delete this contact?')) {
+  const handleDeleteClick = () => { 
       deleteContact(id);
-    }
   };
 
   const handleChange = e => {
@@ -85,7 +83,8 @@ const ContactItem = ({ id, name, number }) => {
         </>
       ) : (
         <>
-          <span>{name}:</span> <span>{number}</span>
+          <span>{name}:</span> 
+          <span>{number}</span>
           <div>
             <ButtonStyled onClick={handleEditClick}>Edit</ButtonStyled>
             <ButtonStyled onClick={handleDeleteClick} disabled={isDeleting}>

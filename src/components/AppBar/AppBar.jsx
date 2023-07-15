@@ -11,7 +11,7 @@ const AppBar = () => {
   const isLoggedIn = useSelector(getIsLoggedIn);
 
   return (
-    <header className={css.header__wrapper}>
+    <header className={css.header}>
       <Navigation />
       {isLoggedIn ? <UserMenu /> : <AuthNav />}
     </header>

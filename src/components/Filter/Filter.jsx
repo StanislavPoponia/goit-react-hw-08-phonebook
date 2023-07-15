@@ -21,7 +21,7 @@ const Filter = () => {
       Find contacts by name
       <DebounceInput
         minLength={1}
-        debounceTimeout={300}
+        debounceTimeout={200}
         className={css.input}
         type="text"
         value={filter}

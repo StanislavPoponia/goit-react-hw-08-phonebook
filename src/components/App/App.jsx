@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { useSelector } from 'react-redux';
-
 import { getToken } from 'redux/selectors';
 import AppBar from 'components/AppBar';
 import Container from 'components/Container';
@@ -9,7 +8,6 @@ import { RestrictedRoute } from 'components/Route/RestrictedRoute';
 import { PrivatRoute } from 'components/Route/PrivatRoute';
 import { useGetCurrentQuery } from 'redux/userApi';
 
-import css from './App.module.css';
 
 const HomePage = lazy(() => import('pages/HomePage/HomePage'));
 const LoginPage = lazy(() => import('pages/LoginPage/LoginPage'));
@@ -28,9 +26,9 @@ const App = () => {
     <Container>
       <AppBar />
       {isLoading ? (
-        <p className={css.default}>...loading</p>
+        <p>loading</p>
       ) : (
-        <Suspense fallback={<p className={css.default}>...loading</p>}>
+        <Suspense fallback={<p>loading</p>}>
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route
