@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-
 import { getIsLoggedIn } from 'redux/selectors';
 import css from './HomePage.module.css';
 
@@ -8,7 +7,7 @@ const HomePage = () => {
   const isLoggedIn = useSelector(getIsLoggedIn);
   return (
     <div className={css.wrapper}>
-      <h1>PhoneBook!</h1>
+      <h1>PhoneBook</h1>
       {!isLoggedIn && (
         <>
           <p className={css.text}>

@@ -10,7 +10,7 @@ import {
 } from 'redux/contactsSlice';
 import { useEffect } from 'react';
 
-import { notifyAddContact, serverError } from 'utils/notification';
+import { notifyAddContact, serverError } from 'utils/toast';
 import css from './FormPhonebook.module.css';
 
 const FormPhonebook = () => {

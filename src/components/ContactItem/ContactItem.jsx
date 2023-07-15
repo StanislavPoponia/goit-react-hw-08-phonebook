@@ -4,7 +4,7 @@ import { RotatingLines } from 'react-loader-spinner';
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 
-import ButtonStyled from '../shared/ButtonStyled';
+import ButtonStyled from '../Button/ButtonStyled';
 import {
   useDeleteContactMutation,
   useUpdateContactMutation,

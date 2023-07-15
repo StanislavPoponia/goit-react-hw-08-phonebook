@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 
-import FormPhonebook from 'components/FormPhonebook/';
+import FormPhonebook from 'components/Phonebook';
 import Filter from 'components/Filter';
 import ContactList from 'components/ContactList';
 import { getIsLoggedIn } from 'redux/selectors';

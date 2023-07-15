@@ -1,7 +1,7 @@
 import { RotatingLines } from 'react-loader-spinner';
 import { ToastContainer, toast } from 'react-toastify';
 import { useEffect } from 'react';
-import { serverError, registerError } from 'utils/notification';
+import { serverError, registerError } from 'utils/toast';
 import { useRegisterMutation } from 'redux/userApi';
 import css from './RegisterForm.module.css';
 import 'react-toastify/dist/ReactToastify.css';
