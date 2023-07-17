@@ -44,11 +44,7 @@ const ContactItem = ({ id, name, number }) => {
     updateContact({ id, name: editedName, number: editedNumber });
   };
 
-  const handleDeleteClick = () => {
-    if (window.confirm('Are you sure you want to delete this contact?')) {
-      deleteContact(id);
-    }
-  };
+  const handleDeleteClick = () => deleteContact(id);
 
   const handleChange = e => {
     if (e.target.name === 'name') {
